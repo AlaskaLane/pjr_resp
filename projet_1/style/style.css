@@ -19,9 +19,6 @@ body{
 }
 
 
-
-
-
 .container {
     display: flex;
     justify-content: space-between;
@@ -29,6 +26,15 @@ body{
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+
+@media (max-width: 768px) {
+    .container .bloc{
+        width: 100%;
+    }
+    
 }
 
 .header {
@@ -87,10 +93,6 @@ nav a:hover{
     color: rgb(46, 33, 10);
     border-bottom: 2px solid rgb(228, 62, 62);
 }
-
-
-
-
 
 
 

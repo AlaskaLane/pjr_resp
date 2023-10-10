@@ -10,6 +10,7 @@
     <?php include 'header.php'; ?>
     
     <div class="container">
+        <div class="block">
         <?php include 'left-sidebar.php'; ?>
         <?php include 'content.php'; ?>
         <?php include 'right-sidebar.php'; ?>
