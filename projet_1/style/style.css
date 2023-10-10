@@ -19,6 +19,25 @@ body{
 }
 
 
+
+@media(max-width:768px){
+    .content h1,.left-sidebar a,.right-sidebar h2 {
+        font-size: 1em;
+    } 
+}
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+        align-items: center; /* Pour centrer les éléments au milieu de la page */
+    }
+
+    .left-sidebar, .content, .right-sidebar {
+        width: 100%; /* Chaque élément prendra la pleine largeur */
+        margin-bottom: 20px; /* Espacement entre les éléments */
+    }
+}
+
+
 .container {
     display: flex;
     justify-content: space-between;
@@ -26,15 +45,6 @@ body{
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-
-
-@media (max-width: 768px) {
-    .container .bloc{
-        width: 100%;
-    }
-    
 }
 
 .header {
@@ -96,16 +106,21 @@ nav a:hover{
 
 
 
+
+
+
+
 /* Left Sidebar */
 .left-sidebar {
     width: 20%;
     background-color: #fff;
     padding: 20px;
     border-right: 1px solid #ccc;
+    flex: auto;
 }
 
 .left-sidebar h2 {
-    font-size: 1.2em;
+    
     margin-bottom: 10px;
 }
 
@@ -129,16 +144,63 @@ nav a:hover{
 .content {
     width: 60%;
     padding: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 
 .content h1 {
-    font-size: 1.5em;
+    
     margin-bottom: 10px;
 }
 
 .content p {
     font-size: 1em;
+}
+
+.games-container {
+    width: 90%;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.game {
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.game img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.game h2 {
+    color: #2f2f2f; /* couleur blanche */
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.game:hover{
+    box-shadow: 0 0 15px rgba(0, 183, 79, 0.75);
+ /*   background-color: #2f2f2f;*/
+}
+
+.game p {
+    color: #3e9143;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
 }
 
 /* Right Sidebar */
@@ -150,9 +212,11 @@ nav a:hover{
 }
 
 .right-sidebar h2 {
-    font-size: 1.2em;
+    
     margin-bottom: 10px;
 }
+
+
 
 
 footer {

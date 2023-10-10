@@ -10,7 +10,6 @@
     <?php include 'header.php'; ?>
     
     <div class="container">
-        <div class="block">
         <?php include 'left-sidebar.php'; ?>
         <?php include 'content.php'; ?>
         <?php include 'right-sidebar.php'; ?>
@@ -20,3 +19,27 @@
     <script src="script/script.js"></script>
 </body>
 </html>
+
+
+
+<style> 
+@media (max-width: 770px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .left-sidebar, .content, .right-sidebar {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+
+}
+
+@media (max-width: 520px) {
+    .game {
+        
+
+    }
+}
+</style>
